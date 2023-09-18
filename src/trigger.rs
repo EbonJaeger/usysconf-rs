@@ -39,9 +39,7 @@ impl Display for Task {
     }
 }
 
-/// Trigger is a set of rules associated to a a list of paths.
-/// If allowed to run, Trigger will perform a set of tasks in response
-/// to the modified paths.
+/// Trigger is a set of tasks associated to a a list of paths.
 #[derive(Debug, Deserialize)]
 pub struct Trigger {
     /// Lists of paths associated to this trigger.
